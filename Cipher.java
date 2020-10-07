@@ -4,10 +4,9 @@ import java.io.FileNotFoundException;
 
 public class Cipher
 {
-	File ciphertext, keytext;
-	static String contents;
+
+	static String contents, letters;
 	static char[][] key = new char[5][5];
-	static String letters = "";
 	
 	public Cipher(String ciphers, String keys)
 	{
