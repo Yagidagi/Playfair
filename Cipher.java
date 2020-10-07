@@ -128,7 +128,7 @@ public class Cipher
 		}
 
 		System.out.println("Done:");
-		System.out.println(contents);
+		System.out.println(contents.toUpperCase());
 	
 	}
 
@@ -177,6 +177,6 @@ public class Cipher
 
 
 		System.out.println("Done:");
-		System.out.println(contents);
+		System.out.println(contents.toUpperCase());
 	}
 }
