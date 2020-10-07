@@ -211,14 +211,4 @@ public class Cipher
 		System.out.println("Done:");
 		System.out.println(contents);
 	}
-
-
-
-	public static void main(String[] args)
-	{
-
-		Cipher a = new Cipher("cipher.txt", "key.txt");
-		a.decode();
-
-	}
 }
