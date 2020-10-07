@@ -11,40 +11,8 @@ public class Cipher
 	
 	public Cipher(String ciphers, String keys)
 	{
-		ciphertext = new File(ciphers);
-		keytext = new File(keys);
-		contents = "";
-		try
-		{
-			Scanner scanner = new Scanner(ciphertext);
-			while (scanner.hasNextLine()) 
-			{
-      				contents += scanner.nextLine();
-			}	
-		scanner.close();
-		}
-
-		catch (FileNotFoundException e) 
-		{
-			System.out.println("An error occurred.");
-			e.printStackTrace();
-		}
-
-		try
-		{
-			Scanner scanner = new Scanner(keytext);
-			while (scanner.hasNextLine()) 
-			{
-      				letters += scanner.nextLine();
-			}	
-		scanner.close();
-		}
-
-		catch (FileNotFoundException e) 
-		{
-			System.out.println("An error occurred.");
-			e.printStackTrace();
-		}
+		contents = ciphers;
+		letters = keys;
 
 		
 		contents=contents.toLowerCase();
