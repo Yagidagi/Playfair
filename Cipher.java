@@ -85,7 +85,8 @@ public class Cipher
 		}
 
 		char temp;
-		for (int k=0; k<contents.length()-1;k++)
+
+		for (int k=0; k<contents.length()-1;k=k+2)
 		{
 			temp = contents.charAt(k+1);
 			if (temp == contents.charAt(k))
