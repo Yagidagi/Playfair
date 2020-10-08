@@ -2,16 +2,17 @@ public class CipherRunner
 {
 	public static void main(String[] args)
 	{
-		Cipher a = new Cipher(args[1], args[2]);
+		Cipher.contents=args[1];
+		Cipher.letters= args[2];
 		if (args[0].equals("encode"))
 		{
-			a.encode();
+			Cipher.mode=true;
 		}
-
 		if (args[0].equals("decode"))
 		{
-			a.decode();
+			Cipher.mode=false;
 		}
-
+	
+		Cipher.run();
 	}
 }
